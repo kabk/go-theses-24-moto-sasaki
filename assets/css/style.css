@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+
+
+/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+
+/* 
+  You can use 'fontsquirrel' (https://www.fontsquirrel.com) 
+  or 'transfonter' (https://transfonter.org)
+  to generate your own font for the web from .ttf or .oft files 
+*/
+
+@font-face {
+    font-family: 'Your Font Name';
+    src: url('../fonts/yourfontname/yourfontname-roman.woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Your Font Name';
+    src: url('../fonts/yourfontname/yourfontname-italic.woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+}
+
+
+
+/* VARIABLES */
+
+:root {
+  /* Color values */
+  --color-background: rgba(255,255,255,1);
+  --color-text: rgba(0,0,0,1);
+  --color-text-link: rgba(0,0,255,0.8);
+  --color-text-link-hover: rgba(0,0,255,0.4);
+  /* Font values */
+  --font-family: 'Your Font Name', 'Helvetica', 'Arial', sans-serif;
+  --font-size: 24px;
+  /* Margin value */
+  --margin: 1rem;
+}
+
+/* GENERAL STYLES */
+
+html {
+  font: var(--font-size) var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+body {
+  position:relative;
+  background-color: var(--color-background);
+  font: var(--font-size) var(--font-family);
+  color: var(--color-text);
+  width:100%;
+  height:auto;
+  overflow-y:auto;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+  text-decoration: underline;
+}
+
+.chapter-container{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+}
+
+.chapter-content-text{
+  text-align: left;
+  
+}
+
+.reference-left {
+  position: relative;
+  width: 40%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.chapter-content-image{
+  position: sticky;
+  display: block;
+  width: 120vw;
+  top: 2vw;
+  align-self: flex-start;
+  padding-left: 90px;
+}
+
+.title {
+  font-size: 114px;
+  font-family: Nimbussanl bol, sans-serif;
+  color: gainsboro;
+  margin: 10px;
+}
+
+
+h1{
+  display: block;
+  top: 1vw;
+  background-color: whitesmoke;
+  text-align: left;
+  letter-spacing: -1px;
+  margin: 1px;
+  color: gainsboro;
+  cursor: default;
+  font-size: 30px; /* h1 style */
+}
+
+sup{
+  color: blue;
+}
+
+h2{
+  /* h2 style */
+}
+
+h3{
+  /* h3 style */
+}
+
+h4, h5, h6{
+  /* h4-h5-h6 style */
+}
+
+p{
+  display: block;
+  cursor: default;
+  width:100%;
+  text-align: left;
+  letter-spacing: -1px;
+  line-height: 11px;
+  font: 23px Nimbussanl bol, sans-serif;
+  color: black; 
+  /* paragraph style */
+}
+
+ul{
+  position:fixed;
+  line-height: 30px;
+  display: block;
+  right: 40px;
+  list-style: none;
+  text-align: right;
+  /* ordered list and unordered list styles */
+}
+
+a, a:visited, a:hover {
+  /* color: var(--color-text-link-hover); */
+  color: gainsboro;
+  text-align: left;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline black 1.5px;
+
+}
+
+blockquote{
+  /* lockquote element style */
+}
+
+hr{
+  /* horizontal rule style */
+}
+
+.my-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  gap: 2rem;
+  margin: 20px;
+  padding: 10px;
+}
+
+.my-grid-container > .book-image-1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  width: 100%;
+  object-fit: contain;
+  height: var(--cell-height);
+  grid-row: 1;
+  margin-right: 10px;
+  place-self: end;
+}
+
+.my-grid-container > .book-image-3 {
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 1;
+  width: 100%;
+  object-fit: contain;
+  height: var(--cell-height);
+  grid-row: 1;
+  margin-left: 10px;
+  place-self: end;
+}
+
+
+.my-grid-container > .book-image-2 {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+
+  height: 230px;
+  width: 100%;
+  object-fit: contain;
+  place-self: end;
+}
+
+figcaption {
+  display: block;
+  cursor: default;
+  text-align: center;
+  font-family: Nimbussanl bol, sans-serif;
+  font-size: 15px;
+}
+
+
+
+/* PAGE STYLES */
+
+/* page structure */
+
+div.page-wrapper {
+  /* the element that 'wraps' everything */
+  padding: var(--margin);
+}
+
+/* navigation */
+ 
+nav{
+  background-color: blue;
+}
+
+/* content */
+
+main{
+ background-color: none;
+}
+
+summary{
+  list-style: none;
+   
+}
+
+
+
+
+
+
+/* UTILITY CLASSES */
+
+/* hide desktop mobile etc */
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+a.button{
+  position: fixed;
+  font-size: 70px;
+  bottom: -30px;
+  right: 20px;
+  padding: 0.4em;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  scroll-behavior: smooth;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+
+
+/* WEBSITE MEDIA QUERIES */
+
+/* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
+/* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
+
+@media (max-width: 779px) {
+
+ 
+  /* your 'mobile' overriding css properties here */
+ 
+  .chapter-content-text{
+    width: 80%;
+    background-color: yellow;
+  } 
+
+  .chapter-content-image{
+    width:10%;
+  }
+  /* utility classes, mobile */
+
+  .desktop-only{
+    display:none;
+  }
+
+  .mobile-only{
+    display:block;
+  }
+
+}
+
+
+
+/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
+
+@media (max-width: 339px) {
+
+  
+
+  /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
+
+@media (max-width: 779px) and (orientation: landscape) {
+
+
+
+   /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style for 'small' desktop screens */
+
+@media (min-width: 780px) and (max-width: 992px) {
+
+  /* your overriding css properties here */
+
+}
+
+

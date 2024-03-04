@@ -24,7 +24,7 @@
 	<!-- first link your CSS dependences, here is normalize, a CSS 'reset' for cross-browser appearence uniformity -->
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<!-- you stylesheet -->
-	<link rel="stylesheet" href="assets/css/my-style.css?ver=1.0">
+	<link rel="stylesheet" href="assets/css/style.css?ver=1.0">
 
 	<!-- js -->
 	<!-- first link your javascript dependencies, here as an example is Jquery -->
@@ -42,163 +42,656 @@
 
 		<header>
 
-			<h1> Hello World!</h1>
-			<p>A <strong>document</strong> by <em>me</em></p>
+			<div class="title">
+				<nobr>An ode to subtle placement</nobr>
+			</div>
+
+			<div id="mySidenav" class="sidenav">
+
+				<nav>
+					<ul>
+
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+						<li><a href="#abstract">Abstract</a></li>
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#chapter-1">Personal Belongings on the Floor</a></li>
+						<li><a href="#chapter-2">An Imaginary Methodology</a></li>
+						<li><a href="#chapter-3">Exploration of Contemporary Artists </a></li>
+						<li><a href="#chapter-4">Objects and Schema</a></li>
+						<li><a href="#chapter-5">Product placement in Television</a></li>
+						<li><a href="#conclusion">Conclusion</a></li>
+
+					</ul>
+				</nav>
+
+			</div>
+
+			<div id="main">
+
+
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+			</div>
 
 		</header>
 
 		<main>
 
-			<h2 id="intro">Intro</h2>
+			<div class="chapter-container">
 
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus nulla, rutrum eget malesuada
-				sit amet, gravida in nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-				turpis egestas. Phasellus ligula felis, consectetur ut mi eu, egestas interdum augue. Aliquam a ipsum
-				lectus. Pellentesque a vulputate ligula, id malesuada quam. Cras eleifend in leo vitae pellentesque.
-				Duis ac vehicula sem, ut blandit leo. Mauris vulputate dapibus velit tincidunt varius. Duis euismod diam
-				tellus, eget dictum ante suscipit quis. Nunc sed est ipsum. Nunc luctus augue id sapien blandit
-				fermentum. Aenean eget ipsum lacinia mi eleifend luctus at a arcu.
-			</p>
+				<!-- <div class="reference-left">
 
-			<p>
-				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem
-				dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt
-				pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta,
-				malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam
-				orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem
-				porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed
-				euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros
-				nec turpis.
-			</p>
+					<a href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+						Gormley.</a>
 
-			<h2 id="chapter-1">Chapter 1</h2>
+				</div> -->
 
-			<p>
-				Sed volutpat mauris at tempus cursus. Aenean finibus eros nibh, vel consequat velit porta ut. In
-				faucibus ante sed mattis efficitur. Duis semper scelerisque sollicitudin. Vestibulum faucibus, nisl at
-				venenatis posuere, nisi felis congue mauris, eget auctor mi nulla nec tellus. Pellentesque habitant
-				morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sapien metus, blandit
-				vehicula purus quis, vehicula cursus erat. Donec non cursus neque.
-			</p>
+				<div class="chapter-content-text">
 
-			<details>
-
-				<summary>
-					<h3 id="intro">Sub-content, example of an accordion</h2>
-				</summary>
-
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus nulla, rutrum eget
-					malesuada sit amet, gravida in nisi. Pellentesque habitant morbi tristique senectus et netus et
-					malesuada fames ac turpis egestas. Phasellus ligula felis, consectetur ut mi eu, egestas interdum
-					augue. Aliquam a ipsum lectus. Pellentesque a vulputate ligula, id malesuada quam. Cras eleifend in
-					leo vitae pellentesque. Duis ac vehicula sem, ut blandit leo. Mauris vulputate dapibus velit
-					tincidunt varius. Duis euismod diam tellus, eget dictum ante suscipit quis. Nunc sed est ipsum. Nunc
-					luctus augue id sapien blandit fermentum. Aenean eget ipsum lacinia mi eleifend luctus at a arcu.
-				</p>
-
-				<p>
-					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem
-					dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt
-					pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta,
-					malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu.
-					Nullam orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget
-					posuere sem porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur
-					vestibulum ipsum, sed euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet
-					lorem, ut sodales ex eros nec turpis.
-				</p>
-
-			</details>
-
-			<p>
-				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem
-				dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt
-				pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta,
-				malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam
-				orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem
-				porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed
-				euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros
-				nec turpis.
-			</p>
-
-			<h2 id="chapter-2">Chapter 2</h2>
-
-			<p>
-				Proin non pellentesque leo. Integer finibus luctus mi eu egestas. Integer placerat non tortor id
-				lacinia. Donec faucibus fermentum porta. Praesent fringilla sapien id tempor vestibulum. Morbi egestas
-				dolor vitae lacus mattis, id posuere nulla viverra. Ut ultricies placerat mi, et porttitor nunc sodales
-				sit amet. Cras vehicula lectus eget tortor efficitur, sit amet imperdiet velit varius. Pellentesque
-				ultricies purus pretium magna efficitur, eget interdum orci dignissim. Orci varius natoque penatibus et
-				magnis dis parturient montes, nascetur ridiculus mus. Vestibulum finibus, lorem at blandit luctus, massa
-				libero feugiat ex, non fringilla ante sem quis lorem. Cras ac consequat dui. Interdum et malesuada fames
-				ac ante ipsum primis in faucibus. Pellentesque suscipit turpis leo, at dapibus justo rutrum sed. In nunc
-				nunc, sagittis eget rutrum consectetur, tempus vitae augue.
-			</p>
-
-			<blockquote>
-				<p>Our struggle for the trees and forests is first and foremost a democratic and popular struggle.
-					Because a handful of forestry engineers and experts getting themselves all worked up in a sterile
-					and costly manner will never accomplish anything! Nor can the worked-up consciences of a multitude
-					of forums and institutions—sincere and praiseworthy though they may be—make the Sahel green again,
-					when we lack the funds to drill wells for drinking water a hundred meters deep, while money abounds
-					to drill oil wells three thousand meters deep!</p>
-			</blockquote>
-
-			<figure>
-
-				<a href="content/painting-forest-lake.jpg" target="_blank">
-					<img src="content/painting-forest-lake.jpg"
-						alt="A painted representation of a forest with a big blue lake" width="100%" height="auto">
-				</a>
-
-				<figcaption>
+					<h1 id="abstract">Abstract</h1>
 
 					<p>
-						<em><a href="https://www.youtube.com/watch?v=bkKTSw4pL2A" target="_blank">Painting of a forest with a blue lake</a>, by Anonymous<em>
+
+						Any object is completely still or in motion from one place to another. Rearranging objects in
+						one's apartment is one example, where the objects I am surrounded with are tentative regarding
+						the placement.
 					</p>
 
-				</figcaption>
+					<p>
+						The scene I saw of personal belongings, used as a form of queuing at the football stadium in
+						Japan, has a specific reason behind the placement. Although temporarily placed, it has a meaning
+						moving forward.
+					</p>
+					<p>
+						In this thesis, I aim to discuss the change in spatial environments caused by the placement of
+						objects. My research question is, how does the placement of objects define new interpretations
+						within the spatial environment?
+						Additionally, what are the implications of misplacing text and objects together?
+					</p>
+					<p>
+						I plan to investigate these aspects by incorporating my memories of visits to a specific spatial
+						environment where objects are influenced and exploring examples from contemporary artists that I
+						have personally encountered. Throughout this essay, I will dive into some of the chosen works
+						mentioned and analyze how the placement of the objects influences the viewer within the space.
 
-			</figure>
+					</p>
+				</div>
 
-			<p>
-				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem
-				dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt
-				pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta,
-				malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam
-				orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem
-				porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed
-				euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros
-				nec turpis.
-			</p>
 
-			<h2 id="epilogue">Epilogue</h2>
+				<div class="chapter-content-image">
 
-			<p>
-				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem
-				dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt
-				pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta,
-				malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam
-				orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem
-				porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed
-				euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros
-				nec turpis.
-			</p>
 
-		</main>
+				</div>
 
 
 
-		<footer>
+			</div>
 
-			<hr>
 
-			<p>
+			<div class="chapter-container">
+
+				<!-- <div class="reference-left">
+
+					<a href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+						Gormley.</a>
+
+				</div> -->
+
+				<div class="chapter-content-text">
+
+					<h1 id="introduction">Introduction</h1>
+
+					<p>
+						During my time in Japan, every once in a while I enjoyed watching a football match at the
+						stadium. At first, it wasn’t in my interest at all. I was aware but not interested. But then it
+						became recurring to my eyes whenever I walked past it. As I kept walking around the Todoroki
+						stadium, what captivated my attention were the personal belongings on the floor, unsure of why
+						there were so many of them. I started to recognize that the personal belongings on the floor
+						were a form of queuing that had been agreed upon.
+					</p>
+
+					<p>
+						Once I realized fans were using personal belongings as a way to claim a place in the queue, this
+						sparked an interest.
+					</p>
+
+					<p>
+
+						These thoughtless, yet expressive gestures inspired my interest to explore the connection
+						between the image of personal belongings as a form of queueing and the art pieces. The focal
+						point between the two is the spatial positionings of the objects.
+
+					</p>
+
+
+
+
+
+				</div>
+
+				<div class="chapter-content-image">
+
+				</div>
+
+
+
+			</div>
+
+
+
+			<div class="chapter-container">
+
+				<!-- <div class="reference-left">
+
+					<a href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+						Gormley.</a>
+
+				</div> -->
+
+				<div class="chapter-content-text">
+
+					<h1 id="chapter-1">Personal Belongings on the Floor</h1>
+
+					<p>
+						I realized there was a first-come-first-served system<sup>1</sup> for the queue created by
+						football fans in Japan. Like an invisible hologram being placed, people were ‘queuing’ through
+						their objects. For the annual tennis event for Wimbledon, there is a booklet of guidelines for
+						the queue. In the booklet, it’s written that “Temporary absence from the queue of refreshments
+						should not exceed 30 minutes.”. <sup>2</sup>
+					</p>
+
+
+					<p>
+						In line with this guideline, I was curious to see whether my spot would be kept. I experimented
+						by placing my bottle with my initials, “M” on the bottle to reserve my spot in the queue. I went
+						away for a few hours to walk around the neighborhood. Some determined fans would reserve the
+						spot earlier than I did, three days before the football match. The reason is, to have a higher
+						chance of claiming a good seat at the stadium. I approached my spot and realized my bottle was
+						in the same place. As the match was about to start, people returned and lined up according to
+						their belongings and then physically queued before the game. There is a sense of environmental
+						trust between the community and a daily ritual of placing personal belongings before every
+						event.
+					</p>
+
+					<div class="my-grid-container">
+
+						<img class="book-image-2" src="content/image_3.jpeg" width="100%" height="40">
+
+					</div>
+
+					<figcaption>[figure01] My personal belongings in the queue, Todoroki Stadium, (2019), image captured
+						by me2</figcaption>
+
+					<p>
+						However, people waiting in line can also be seen as a form design, as Don Norman states,
+					</p>
+
+					<blockquote>“In that way, it’s a matter of design, of trying to understand the psychology of the
+						people waiting but also their boredom and frustration. It requires a human-centered design
+						perspective, from the points of view of both the people doing the servicing and the people
+						waiting in line. That isn’t hard, but you have to develop a sensitivity to it or realize why it
+						might be important.”<sup>3</sup></blockquote>
+
+					<p>
+						The placing of the bottles completely diminishes the frustration and boredom that people may
+						feel while queueing. The system of placing one's belongings and returning when they need to,
+						allows the individuals to make use of their time efficiently.
+					</p>
+
+				</div>
+
+				<div class="chapter-content-image">
+					<img src="content/image_1.png" width="100%" height="auto">
+
+				</div>
+
+
+
+			</div>
+
+			<div class="chapter-container">
+
+				<!-- <div class="reference-left">
+
+					<a href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+						Gormley.</a>
+
+				</div> -->
+
+				<div class="chapter-content-text">
+
+					<h1 id="chapter-2">An Imaginary Methodology </h1>
+
+					<p>
+						Augmented reality is an experience of combining digital information and the real world as a form
+						of additional input for users by altering their natural environment through
+						technology.<sup>4</sup>
+					</p>
+
+					<p>
+						In 2017, IKEA released the ‘IKEA Place’ app to help people virtually place furniture in their
+						homes.<sup>5</sup> Through a sense of augmented reality, users can place interiors in their
+						rooms and experiment with the interiors that would suit the space. This makes shopping for
+						furniture much more convenient while in the comfort of their home.
+					</p>
+
+					<p>This made me wonder whether we can see a future where augmented reality can replace queueing? The
+						action of placing personal belongings on the floor for a queue creates an augmented reality-like
+						aspect of being present in absence. So the users have the luxury of not waiting? </p>
+
+					<p>Let's say the user creates an AR avatar. As I am writing, I recall something familiar. Back when
+						I was a teenager, occasionally, I would play Nintendo Wii. There is an option in the console for
+						users to create a personal Mii. A Mii is a customizable avatar used in Nintendo consoles. What
+						if a personal Mii is on the spot in the queue?</p>
+
+					<p>A digital personal avatar is in the queue rather than the person. He or she applies the avatar
+						just like one does using IKEA Place, from their own home and then views the avatar using
+						augmented reality in the dedicated area in the queue. Once they are in the queue. An augmented
+						reality Mii is waiting in line. I created an imaginary scenario of Mii with the queue but it
+						does sound promising. </p>
+
+					<p>The methodology of the personal belongings with the queue is eye-opening due to the uniqueness of
+						the action. Placing your belongings on the floor at the stadium unattended is possible to
+						proceed, amongst these individuals because it is agreed upon with mutual trust.</p>
+
+					<p>Each personal belongings created a communal art installation.</p>
+
+					<hr>
+
+				</div>
+
+				<div class="chapter-content-image">
+
+					<img src="content/image_2.png" width="100%" height="auto">
+
+				</div>
+
+			</div>
+
+			<div class="chapter-container">
+
+
+				<div class="chapter-content-text">
+
+					<h1 id="chapter-3">Exploration of Contemporary Artists</h1>
+
+					<div class="my-grid-container">
+
+						<img class="book-image-2" src="content/image_3.jpeg" width="100%" height="40">
+
+					</div>
+
+					<figcaption>[figure01] My personal belongings in the queue, Todoroki Stadium, (2019), image captured
+						by me2</figcaption>
+
+					<p>
+						Zhanna Kadyrova's installation, "Filling In" (2012), featuring cups, pans, jugs, and buckets,
+						came to my mind.
+
+					</p>
+
+
+					<p>
+						There is a similarity between the image of the personal belongings on the floor and Kadyrova's
+						“Filling In” artwork. Both involve the placement of household items with the same principle— an
+						intention towards the placement.
+					</p>
+
+					<p>
+						In the work of “Filling in” a sense of urgency of leaning towards the pans and cups is present.
+						To look closer to the artwork; Colorful tiles are filled rather than a transparent liquid in
+						each of the household items. The color here presents a tension between the form and the
+						signifier. The liquid in each has an association with food or beverage. For example, the white
+						could signify milk, the red could signify strawberry jam, the blue could signify? And the black
+						could signify? Am I able to drink from the blue container?
+					</p>
+
+
+					<p>
+						The work challenges the audience to contemplate a deep feeling about what we choose to fill the
+						containers with and what we consume from them in our everyday lives.<sup>7</sup> It is almost
+						unrecognizable to identify the placement of the color and the household items together because
+						it brings the viewer to reconsider what we choose to fill the containers with.
+					</p>
+
+					<p>
+						Sometimes one has to physically attend a room, place, or exhibition to notice how a sculpture,
+						artwork, or object is changing the viewer's senses.
+					</p>
+
+					<div class="my-grid-container">
+
+						<img class="book-image-1" src="content/image_5.JPG" width="100%" height="40" margin="10px">
+						<img class="book-image-3" src="content/image_6.jpg" width="100%" height="40">
+
+					</div>
+
+					<p>
+						While attending the exhibition of Anthony Gormley, the piece ‘Breathing Room III’ (2010) caught
+						my attention. As shown in Figure 6, the space contains a three-dimensional drawing of lines. The
+						photo-luminescent paint on the three-dimensional lines produces light when it is dark. In my
+						perception, the work seemed to challenge the audience's sensory perception and how the work
+						created a sense of surprise and wonder. I decided to observe the bright blue light in the dark
+						room. People were walking around and discussing as they walked. I was waiting and observing. I
+						could only see the shadows of the human body moving. Across the room, I hear people talking. All
+						of a sudden, the people stopped talking. Immediately, I stopped thinking. The quick transition
+						from dark to light, the immediate reveal of the human existence from the shadow to the
+						visibility of their outfits and their faces caught me off guard. The light turned off in the
+						room and I was back to seeing the shadow of the human body moving.
+					</p>
+
+					<p>
+						Anthony Gromley says about the Breathing Room III (2010),
+					</p>
+
+					<blockquote>
+
+						“The dynamic of the breathing room is between meditation and integration, this is not about
+						representation, this is not about transferring information or ideas, it is reinforcing the
+						first-hand experience of each and every one of us, as experiencing consciousness within these
+						spaces. And that it should be both reinforcing but also disorienting”<sup>8</sup>
+					</blockquote>
+
+					<p>
+						Although the artist himself suggests that it is not a representation. As an observer, I see the
+						space of the Breathing Room III (2010) as an infinite representation of the everyday lifestyle
+						of people walking through day and night. On a sunny day outside, we can see their outfits and
+						their facial expressions, while at night outside we can see shadows of people moving unless
+						there is a light nearby. One last note: the rapid transition of the dark and the light within
+						the space creates the feeling of disorientation.
+					</p>
+
+					<p>
+						I once visited a store that sells clocks. This place created a similar experience. I entered
+						with an open curiosity to see different kinds of clocks. In the room, I see different types of
+						clocks. I noticed that the clocks were moving at different tempos. I couldn’t think at the
+						moment. I had my eye on one clock but there were other clocks ticking and other clocks ticking
+						at a different pace. I was lost in a room surrounded by clocks. I couldn’t stay any longer. I
+						asked myself, how am I able to spend a day with a ticking sound that is not synchronized? Since
+						then I haven’t been to the shop again. The spatial environment surrounded by clocks made me feel
+						disoriented.
+					</p>
+
+					<p>
+						Referring back to Anthony Gromley’s work, Breathing Room III (2010), This experience stands in
+						contrast to my visit to the clock store. In the case of the clock store, the sound was the focus
+						of the disorientation within the spatial environment whereas in the Breathing Room, the act of
+						switching the light on and off was causing disorientation.
+					</p>
+
+					<span class="footnotes"><a
+							href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+							Gormley.</a></span>
+
+				</div>
+
+				<!-- <div class="chapter-content-image">
+
+
+				</div> -->
+
+			</div>
+
+			<div class="chapter-container">
+
+				<!-- <div class="reference-left">
+
+					<a href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+						Gormley.</a>
+
+				</div> -->
+
+				<div class="chapter-content-text">
+
+					<h1 id="chapter-3">Thinking and Choosing</h1>
+
+					<p>
+						For my visual essay, I decided to produce a video rather than create a collection of images in a
+						book form. I decided to lay out the images and print out words on top of a lightbox. (words
+						mentioned in the video are chosen intuitively and printed before recording).
+					</p>
+
+					<p>
+						I wanted to communicate the process of choosing, making a decision, and creating a dialogue with
+						the images and the words together. There isn’t a straightforward correlation between the words
+						and the images but placing the words below the images produces an open dialogue to the viewer or
+						even a variety of associations.
+					</p>
+
+					<p>
+						The part where it is blank is where I was thinking. In my mind, I was thinking to myself, what
+						images should I place? or what words should I place? or should I place the images and words
+						together to see whether they match?
+					</p>
+
+					<p>
+						The video was unedited so the viewers could see the motion of my hands rearranging the images
+						and the words together.
+					</p>
+
+					<p>
+						The lightbox is transformed into a field of the mind, where the viewer can observe the process
+						of choosing, deciding, thinking, and placing.
+					</p>
+
+					<hr>
+
+				</div>
+
+				<div class="chapter-content-image">
+
+
+
+				</div>
+
+			</div>
+
+			<div class="chapter-container">
+
+
+
+				<div class="chapter-content-text">
+
+					<h1 id="chapter-4">Objects and Schema </h1>
+
+					<p>
+						As I started to read about the concept of schema, I found the work of “Thinking Head” by Lara
+						Favaretto clashes with it.
+					</p>
+
+					<p>
+						Schema is a foundation that we can use to take in new information and try to search whether it
+						makes any sense. The way our brain can organize information in our minds is like a filing
+						cabinet. <sup>9</sup>
+					</p>
+
+					<p>
+						Object schemas allow our brains to categorize inanimate objects without any thoughts behind
+						them, for example, one can understand how to use a pencil and eraser.
+					</p>
+
+					<p>
+						I decided to visit the Biennale in Venice and saw Lara Favaretto's work, "Thinking Head" (2019).
+						The objects and words were strategically placed, creating new meanings from a different
+						perspective.
+					</p>
+
+					<p>
+						The words were chosen by selected participants from which the artist decided. The words were
+						debated and discussed in a bunker. Later those keywords are combined with the corresponding
+						objects.
+					</p>
+
+					<p>
+						Schema comes along in the discussion of this chapter because when I perceive the objects, the
+						first impression of each object and each word is implemented straight to the mind. This is
+						because the art piece and words combined with the artwork may not seem to be related at first
+						glance. However, as you read the word, it builds a more diverse perspective, in such a way that
+						the word and the object intertwine and have an open dialogue behind them.
+					</p>
+
+					<p>
+						I was in the room searching for a connection. The relationship between the words and objects
+						wasn’t aligning, which changed my interpretation, therefore I had to refine my understanding of
+						the piece. In the work, the intention of the placement behind the provisional aspect in the
+						objects and the words is to imitate the subdivision of the mind, the thought process, or the
+						memory.
+					</p>
+
+					<p>
+						In line with the scene at the football stadium, the bottle belongs to somebody hence the
+						initials of the individual. There is a significant connection and belonging but what I find
+						intriguing is that although an obvious connection exists, the text (initials) becomes detached
+						from the object (personal belongings). Each individual has a direct implication of the
+						connection because of their initials applying to the bottle. But as an observer, it has a
+						misplacement but also assumes that the object and the initials connect.
+					</p>
+
+					<p>
+						In that way, Favaretto’s work and the bottle with the initials have a resemblance.
+					</p>
+
+
+					<hr>
+
+				</div>
+
+				<!-- <div class="chapter-content-image">
+
+				</div> -->
+
+			</div>
+
+			<div class="chapter-container">
+
+				<!-- <div class="reference-left">
+
+					<a href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+						Gormley.</a>
+
+				</div> -->
+
+				<div class="chapter-content-text">
+
+					<h1 id="chapter-5">Product placement in television</h1>
+
+					<p>
+						The placement of the object manipulates the viewer not only in an exhibition space or public
+						space but also creates new meaning in television. Although subtle and unnoticeable for the
+						audience to sometimes recognize. The placement of the product placement<sup>10</sup> has a
+						strong attraction for marketing.
+					</p>
+
+					<p>
+						One example that significantly raised the viewer's attention is the product placement of
+						eggo<sup>11</sup> in the TV series, Stranger Things (2016).
+					</p>
+
+					<p>
+						While watching the TV series, there was an appearance of Eggo waffles, in this particular scene,
+						shown in figure 11. Not only does the placement of the product influence the viewer's attention
+						but it also saw an increase in the rise of consumption of the frozen waffle
+						industry.<sup>12</sup>
+					</p>
+
+					<p>
+						The website ‘Product Placement Blog’<sup>13</sup> has a record of other products that have
+						appeared in the TV show, Stranger Things (2016). The website also shows products that have
+						appeared in other movies and TV shows.
+					</p>
+
+					<p>
+						In this case, these products that appeared in the television show shaped a sense of the 1980s
+						atmosphere within the set design. This example shows the subtle importance of placing in a set
+						design. Similar to what was seen in the artworks and the placement of the personal belongings on
+						the queue, this conveys the significance of specific placements of objects in various domains.
+					</p>
+
+
+					<hr>
+
+				</div>
+
+				<div class="chapter-content-image">
+
+				</div>
+
+			</div>
+
+			<div class="chapter-container">
+
+				<!-- <div class="reference-left">
+
+					<a href="https://www.antonygormley.com/resources/videos/test-sites"><sup>6</sup>Videos – Antony
+						Gormley.</a>
+
+				</div> -->
+
+				<div class="chapter-content-text">
+
+					<h1 id="conclusion">Conclusion</h1>
+
+					<p>
+						To write this thesis, with the research question: how does the placement of the object define
+						new interpretations within the spatial environment? primarily highlighting the personal
+						belongings on the floor, has opened up topics that I would have not touched upon. One topic that
+						surprised me, was product placement in television. An area in which I would like to pay more
+						attention when watching movies or TV shows. The placement has an intention, just as the
+						placement of objects in the queue has a deliberate intention. Although subtle.
+					</p>
+
+					<p>
+						The personal belongings in a queue have three main components happening; 1) the personal
+						belongings, 2) the initials, and 3) the person. For the queue to operate, those three components
+						must be available. A similar connotation to a mathematical equation.
+					</p>
+
+					<p>
+						Furthermore, each personal belonging is transformed into an art installation created by the
+						people. Initially perceived as belonging, it has also transformed into a collective of shared
+						purpose.
+					</p>
+
+
+					<hr>
+
+				</div>
+
+				<div class="chapter-content-image">
+
+				</div>
+
+			</div>
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+	<a href="#" class="button"> ^ </a>
+
+
+	</main>
+
+
+
+	<footer>
+
+
+
+		<!-- <p>
 				Last edit date: 2023/12/11
-			</p>
+			</p> -->
 
-		</footer>
+	</footer>
 
 
 
