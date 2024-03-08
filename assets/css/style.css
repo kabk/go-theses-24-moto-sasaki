@@ -499,7 +499,7 @@ ul.menulist {
     line-height: 11px;
     font: 15px Nimbussanl bol, sans-serif;
     color: black;
-    word-break: break-all;
+    word-break: keep-all;
     /* paragraph style */
   }
 
