@@ -500,6 +500,7 @@ ul.menulist {
     font: 15px Nimbussanl bol, sans-serif;
     color: black;
     word-break: keep-all;
+    hyphens: auto;
     /* paragraph style */
   }
 
