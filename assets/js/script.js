@@ -2,14 +2,14 @@
 // otherwise you can delete everything here.
 $(document).ready(function() {
 
+});
+
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mySidenav").style.width = "220px";
+  document.getElementById("main").style.marginRight = "10px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.marginRight= "0";
 }
-
-});

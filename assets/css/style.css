@@ -11,19 +11,19 @@
 */
 
 @font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-roman.woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: 'Your Font Name';
+  src: url('../fonts/yourfontname/yourfontname-roman.woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 @font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-italic.woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: block;
+  font-family: 'Your Font Name';
+  src: url('../fonts/yourfontname/yourfontname-italic.woff2');
+  font-weight: normal;
+  font-style: bold;
+  font-display: block;
 }
 
 
@@ -32,10 +32,10 @@
 
 :root {
   /* Color values */
-  --color-background: rgba(255,255,255,1);
-  --color-text: rgba(0,0,0,1);
-  --color-text-link: rgba(0,0,255,0.8);
-  --color-text-link-hover: rgba(0,0,255,0.4);
+  --color-background: rgba(255, 255, 255, 1);
+  --color-text: rgba(0, 0, 0, 1);
+  --color-text-link: rgba(0, 0, 255, 0.8);
+  --color-text-link-hover: rgba(0, 0, 255, 0.4);
   /* Font values */
   --font-family: 'Your Font Name', 'Helvetica', 'Arial', sans-serif;
   --font-size: 24px;
@@ -52,13 +52,13 @@ html {
 }
 
 body {
-  position:relative;
+  position: relative;
   background-color: var(--color-background);
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
-  width:100%;
-  height:auto;
-  overflow-y:auto;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
 }
 
 a {
@@ -71,15 +71,50 @@ a:hover {
   text-decoration: underline;
 }
 
-.chapter-container{
-  display: flex;
-  flex-direction: row;
-  width: 85%;
+header {
+  position: absolute;
+  top: 35px;
+  width: 30px;
+  right: 0px;
+  margin-right: 40px;
 }
 
-.chapter-content-text{
+.chapter-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 4 auto;
+
+}
+
+.chapter-container>* {
+  flex: 2;
+  /* Make both containers grow to fill available space equally */
+}
+
+.chapter-container .chapter-content-text {
+  flex-grow: 3;
+  /* Each chapter will take up equal space */
+  margin: 5px;
+  /* Add margin for better spacing between chapters */
+  background-color: white;
+  /* Example background color */
+  border: 1px solid #ccc;
+  /* Example border */
+  padding: 5px;
+  /* Example padding */
+}
+
+.chapter-content-text {
   text-align: left;
-  
+  width: 2000px;
+
+}
+
+.content {
+  font-size: 66px;
+  cursor: pointer;
+  color: grey;
 }
 
 .reference-left {
@@ -92,24 +127,27 @@ a:hover {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.chapter-content-image{
+.chapter-content-image {
   position: sticky;
   display: block;
-  width: 120vw;
-  top: 2vw;
+  /* width: 1000px; */
+  top: 80px;
   align-self: flex-start;
-  padding-left: 90px;
+  padding-left: 20px;
 }
 
 .title {
-  font-size: 114px;
+  font-size: 62px;
+  padding-left: 10px;
   font-family: Nimbussanl bol, sans-serif;
   color: gainsboro;
-  margin: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  
 }
 
 
-h1{
+h1 {
   display: block;
   top: 1vw;
   background-color: whitesmoke;
@@ -118,39 +156,45 @@ h1{
   margin: 1px;
   color: gainsboro;
   cursor: default;
-  font-size: 30px; /* h1 style */
+  font-size: 30px;
+  font-family: Nimbussanl bol, sans-serif;
+  text-align: center;
 }
 
-sup{
+sup {
   color: blue;
 }
 
-h2{
-  /* h2 style */
+h2 {
+  color: none;
 }
 
-h3{
+h3 {
+  color: none;
   /* h3 style */
 }
 
-h4, h5, h6{
+h4,
+h5,
+h6 {
+  color: none;
   /* h4-h5-h6 style */
 }
 
-p{
+p {
   display: block;
   cursor: default;
-  width:100%;
+  width: 100%;
   text-align: left;
   letter-spacing: -1px;
   line-height: 11px;
   font: 23px Nimbussanl bol, sans-serif;
-  color: black; 
+  color: black;
   /* paragraph style */
 }
 
-ul{
-  position:fixed;
+ul {
+  position: fixed;
   line-height: 30px;
   display: block;
   right: 40px;
@@ -159,12 +203,14 @@ ul{
   /* ordered list and unordered list styles */
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   /* color: var(--color-text-link-hover); */
   color: gainsboro;
   text-align: left;
   text-decoration: none;
-  
+
 }
 
 a:hover {
@@ -173,11 +219,15 @@ a:hover {
 
 }
 
-blockquote{
+blockquote {
+  color: none;
+  font-size: 24px;
+  font-family: Nimbussanl bol, sans-serif;
   /* lockquote element style */
 }
 
-hr{
+hr {
+  color: none;
   /* horizontal rule style */
 }
 
@@ -189,38 +239,37 @@ hr{
   padding: 10px;
 }
 
-.my-grid-container > .book-image-1 {
+.my-grid-container>.book-image-1 {
   grid-column: 1 / span 3;
   grid-row: 1 / span 1;
   width: 100%;
   object-fit: contain;
-  height: var(--cell-height);
+  height: 342px;
   grid-row: 1;
-  margin-right: 10px;
+  margin-right: -16px;
   place-self: end;
 }
 
-.my-grid-container > .book-image-3 {
+.my-grid-container>.book-image-2 {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+  place-self: end;
+}
+
+.my-grid-container>.book-image-3 {
   grid-column: 3 / span 3;
   grid-row: 1 / span 1;
   width: 100%;
   object-fit: contain;
-  height: var(--cell-height);
+  height: 342px;
   grid-row: 1;
-  margin-left: 10px;
+  margin-right: 44px;
   place-self: end;
 }
 
-
-.my-grid-container > .book-image-2 {
-  grid-column: 1 / span 5;
-  grid-row: 1 / span 1;
-
-  height: 230px;
-  width: 100%;
-  object-fit: contain;
-  place-self: end;
-}
 
 figcaption {
   display: block;
@@ -229,8 +278,6 @@ figcaption {
   font-family: Nimbussanl bol, sans-serif;
   font-size: 15px;
 }
-
-
 
 /* PAGE STYLES */
 
@@ -242,24 +289,90 @@ div.page-wrapper {
 }
 
 /* navigation */
- 
-nav{
-  background-color: blue;
+
+nav {
+  background-color: rgb(255, 255, 255);
 }
 
 /* content */
 
-main{
- background-color: none;
+main {
+  background-color: none;
 }
 
-summary{
+summary {
   list-style: none;
-   
+
 }
 
+hr.line {
+  border: 2px solid gainsboro;
+}
 
+a.button {
+  position: fixed;
+  font-size: 70px;
+  bottom: -30px;
+  right: -1px;
+  padding: 0.4em;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: grey;
+  background-color: transparent;
+  scroll-behavior: smooth;
+}
 
+#main {
+  transition: margin-right .10s;
+  right: -1px;
+  position: relative;
+  width: auto;
+  text-align: right;
+}
+
+.sidenav {
+  position: fixed;
+  height: 100%;
+  width: 150px;
+  width: 0;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 140px;
+}
+
+.sidenav a {
+  padding: 2px 1px 10px 40px;
+  text-decoration: none;
+  font-family: Nimbussanl bol, sans-serif;
+  font-size: 15px;
+  right: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.4s;
+}
+
+.sidenav a:hover {
+  text-decoration: underline;
+}
+
+.sidenav .closebtn {
+  position: relative;
+  top: -100px;
+  left: 99px;
+  cursor: pointer;
+  font-size: 47px;
+  margin-left: 5px;
+}
+
+ul.menulist {
+  position: relative;
+}
 
 
 
@@ -276,63 +389,6 @@ summary{
 }
 
 
-a.button{
-  position: fixed;
-  font-size: 70px;
-  bottom: -30px;
-  right: 20px;
-  padding: 0.4em;
-  margin: 0;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-  background-color: transparent;
-  scroll-behavior: smooth;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-
-
-
 
 /* WEBSITE MEDIA QUERIES */
 
@@ -341,25 +397,132 @@ a.button{
 
 @media (max-width: 779px) {
 
- 
-  /* your 'mobile' overriding css properties here */
- 
-  .chapter-content-text{
-    width: 80%;
-    background-color: yellow;
-  } 
 
-  .chapter-content-image{
-    width:10%;
+  /* your 'mobile' overriding css properties here */
+  .title {
+    font-size: 33px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gainsboro;
+    margin: 8px;
+
   }
+
+  blockquote {
+    font: 15px Nimbussanl bol, sans-serif;
+  }
+
+  .page-wrapper {
+    width: 80vw !important;
+  }
+
+  .chapter-content-text {
+    min-width: 100% !important;
+    background-color: none;
+  }
+
+  .chapter-container>* {
+    flex: 2;
+    /* Make both containers grow to fill available space equally */
+  }
+
+  #main {
+    transition: margin-right .5s;
+    top: -30px;
+    right: -9px;
+    position: relative;
+    width: auto;
+    text-align: right;
+  }
+
+  .sidenav .closebtn {
+    position: relative;
+    top: -15px;
+    left: 129px;
+    cursor: pointer;
+    font-size: 47px;
+    margin-left: 5px;
+  }
+
+  a.button {
+    position: fixed;
+    font-size: 70px;
+    bottom: -30px;
+    right: -9px;
+    padding: 0.4em;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: grey;
+    background-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  .my-grid-container>.book-image-1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    width: 100%;
+    object-fit: contain;
+    height: 242px;
+    grid-row: 1;
+    margin-right: 4px;
+    place-self: end;
+  }
+  
+  .my-grid-container>.book-image-2 {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+    place-self: end;
+  }
+  
+  .my-grid-container>.book-image-3 {
+    grid-column: 3 / span 3;
+    grid-row: 1 / span 1;
+    width: 100%;
+    object-fit: contain;
+    height: 242px;
+    grid-row: 1;
+    margin-right: -20px;
+    place-self: end;
+  }
+  
+  p {
+    display: block;
+    cursor: default;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 11px;
+    font: 15px Nimbussanl bol, sans-serif;
+    color: black;
+    /* paragraph style */
+  }
+
+  .chapter-content-image {
+    width: 10%;
+  }
+
+
+
   /* utility classes, mobile */
 
-  .desktop-only{
-    display:none;
+  .desktop-only {
+    display: none;
   }
 
-  .mobile-only{
-    display:block;
+  .mobile-only {
+    display: block;
+  }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
   }
 
 }
@@ -370,7 +533,7 @@ a.button{
 
 @media (max-width: 339px) {
 
-  
+
 
   /* your overriding css properties here */
 
@@ -384,7 +547,7 @@ a.button{
 
 
 
-   /* your overriding css properties here */
+  /* your overriding css properties here */
 
 }
 
@@ -397,5 +560,3 @@ a.button{
   /* your overriding css properties here */
 
 }
-
-
