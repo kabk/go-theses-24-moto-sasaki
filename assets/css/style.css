@@ -59,6 +59,7 @@ body {
   width: 100%;
   height: auto;
   overflow-y: auto;
+  cursor: crosshair;
 }
 
 a {
@@ -161,6 +162,13 @@ h1 {
   text-align: center;
 }
 
+.small{
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
 sup {
   color: blue;
 }
@@ -190,6 +198,7 @@ p {
   line-height: 11px;
   font: 23px Nimbussanl bol, sans-serif;
   color: black;
+  cursor: none;
   /* paragraph style */
 }
 
@@ -226,6 +235,22 @@ blockquote {
   /* lockquote element style */
 }
 
+.draggable {
+  color: blue;
+  white-space: nowrap;
+  cursor: move;
+}
+
+.draggable1 {
+  color: grey;
+  white-space: nowrap;
+  cursor: move;
+}
+
+.draggable-image {
+  cursor: move;
+}
+
 hr {
   color: none;
   /* horizontal rule style */
@@ -254,9 +279,13 @@ hr {
   grid-column: 1 / span 5;
   grid-row: 1 / span 1;
   height: 250px;
+  height: 50vh;
   width: 100%;
   object-fit: contain;
   place-self: end;
+    background-image: linear-gradient(187deg, var(--white-smoke) 97%, transparent 100%);
+
+    background-attachment: scroll, fixed;
 }
 
 .my-grid-container>.book-image-3 {
@@ -307,6 +336,12 @@ summary {
 
 hr.line {
   border: 2px solid gainsboro;
+}
+
+hr.line_1 {
+  border: 1px solid gainsboro;
+  width: 1300px;
+  left: 200px;
 }
 
 a.button {
@@ -405,9 +440,9 @@ ul.menulist {
     color: gainsboro;
     text-align: center;
     margin: 8px;
-
   }
 
+ 
   blockquote {
     font: 15px Nimbussanl bol, sans-serif;
   }

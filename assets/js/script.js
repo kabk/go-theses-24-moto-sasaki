@@ -13,3 +13,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginRight= "0";
 }
+
+$( function() {
+  $( ".draggable" ).draggable();
+  $( ".draggable1" ).draggable1();
+});
+
+$(function() {
+  $(".draggable-image").draggable();
+});
