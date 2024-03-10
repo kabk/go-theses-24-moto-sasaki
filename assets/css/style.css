@@ -431,7 +431,7 @@ ul.menulist {
 
   /* your 'mobile' overriding css properties here */
   .title {
-    font-size: 40px;
+    font-size: 50px;
     font-family: Nimbussanl bol, sans-serif;
     color: gainsboro;
     text-align: left;
@@ -528,7 +528,7 @@ ul.menulist {
     text-align: left;
     letter-spacing: 0px;
     line-height: 11px;
-    font: 36px Nimbussanl bol, sans-serif;
+    font: 45px Nimbussanl bol, sans-serif;
     color: black;
     word-break: break-word;
     hyphens: auto;
