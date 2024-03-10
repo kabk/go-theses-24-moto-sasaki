@@ -180,18 +180,6 @@ header {
   color: grey;
 }
 
-
-
-.reference-left {
-  position: relative;
-  width: 40%;
-  text-align: left;
-  padding-left: 20px;
-  padding-right: 10px;
-  font-size: 10px;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 .chapter-content-image {
   position: sticky;
   display: block;
