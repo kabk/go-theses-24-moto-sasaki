@@ -458,7 +458,7 @@ ul.menulist {
   #main {
     transition: margin-right .5s;
     top: -30px;
-    right: -431px;
+    right: -429px;
     position: relative;
     width: auto;
     text-align: right;
@@ -526,7 +526,7 @@ ul.menulist {
     text-align: left;
     letter-spacing: 0px;
     line-height: 11px;
-    font: 30px Nimbussanl bol, sans-serif;
+    font: 36px Nimbussanl bol, sans-serif;
     color: black;
     word-break: keep-all;
     hyphens: auto;
