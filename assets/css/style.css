@@ -508,7 +508,7 @@ ul.menulist {
   #main {
     transition: margin-right .5s;
     top: -34px;
-    right: -10px;
+    right: -39px;
     position: relative;
     width: auto;
     text-align: right;
@@ -516,8 +516,8 @@ ul.menulist {
 
   .sidenav .closebtn {
     position: relative;
-    top: -15px;
-    left: 9px;
+    top: -1px;
+    left: 2px;
     cursor: pointer;
     font-size: 47px;
     margin-left: 5px;
@@ -527,7 +527,7 @@ ul.menulist {
     position: fixed;
     font-size: 70px;
     bottom: -30px;
-    right: 33px;
+    right: 0px;
     padding: 0.4em;
     margin: 0;
     border: none;
