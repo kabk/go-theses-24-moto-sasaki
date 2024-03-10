@@ -528,7 +528,7 @@ ul.menulist {
     line-height: 11px;
     font: 36px Nimbussanl bol, sans-serif;
     color: black;
-    word-break: keep-all;
+    word-break: break-word;
     hyphens: auto;
     /* paragraph style */
   }
