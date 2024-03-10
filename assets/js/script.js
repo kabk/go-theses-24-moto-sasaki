@@ -16,5 +16,4 @@ function closeNav() {
 
 $( function() {
   $( ".draggable" ).draggable();
-
 });
