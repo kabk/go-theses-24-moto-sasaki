@@ -428,10 +428,10 @@ ul.menulist {
 
   /* your 'mobile' overriding css properties here */
   .title {
-    font-size: 10px;
+    font-size: 20px;
     font-family: Nimbussanl bol, sans-serif;
     color: gainsboro;
-    text-align: center;
+    text-align: left;
     margin: 8px;
   }
 
@@ -457,7 +457,7 @@ ul.menulist {
   #main {
     transition: margin-right .5s;
     top: -30px;
-    right: -9px;
+    right: -339px;
     position: relative;
     width: auto;
     text-align: right;
