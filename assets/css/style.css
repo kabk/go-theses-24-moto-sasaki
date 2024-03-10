@@ -428,7 +428,7 @@ ul.menulist {
 
   /* your 'mobile' overriding css properties here */
   .title {
-    font-size: 40px;
+    font-size: 10px;
     font-family: Nimbussanl bol, sans-serif;
     color: gainsboro;
     text-align: center;
@@ -441,7 +441,7 @@ ul.menulist {
   }
 
   .page-wrapper {
-    width: 80vw !important;
+    width: 257vw !important;
   }
 
   .chapter-content-text {
@@ -476,7 +476,7 @@ ul.menulist {
     position: fixed;
     font-size: 70px;
     bottom: -30px;
-    right: 109px;
+    right: 33px;
     padding: 0.4em;
     margin: 0;
     border: none;
