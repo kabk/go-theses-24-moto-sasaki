@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "570px";
-  document.getElementById("main").style.marginRight = "10px";
+  document.getElementById("main").style.marginRight = "90px";
 }
 
 function closeNav() {

@@ -433,7 +433,7 @@ a.button {
   right: 0;
   background-color: white;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0;
   padding-top: 140px;
 }
 
@@ -501,7 +501,12 @@ ul.menulist {
 
 
   blockquote {
+    color: whitesmoke;
     font: 20px Nimbussanl bol, sans-serif;
+  }
+
+  blockquote:hover{
+    color: #000;
   }
 
   .page-wrapper {
@@ -594,10 +599,14 @@ ul.menulist {
     font-weight: normal;
     font-size: 19px;
     font-family: Nimbussanl bol, sans-serif;
-    color: black;
+    color: whitesmoke;
     word-break: break-word;
     hyphens: auto;
     /* paragraph style */
+  }
+
+  p:hover {
+    color: #000;
   }
 
   .chapter-content-image {
