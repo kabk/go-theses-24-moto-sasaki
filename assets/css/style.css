@@ -110,6 +110,7 @@ header {
   display: inline-block;
   margin: 50px;
 }
+
 .card .img-top {
   display: none;
   position: absolute;
@@ -117,6 +118,7 @@ header {
   left: 0;
   z-index: 99;
 }
+
 .card:hover .img-top {
   display: inline;
 }
@@ -132,6 +134,8 @@ header {
   cursor: pointer;
   color: grey;
 }
+
+
 
 .reference-left {
   position: relative;
@@ -169,6 +173,7 @@ h1 {
   top: 0;
   z-index: 1000;
   background-color: whitesmoke;
+  transition: background-color 8s ease;
   text-align: left;
   letter-spacing: -1px;
   margin: 1px;
@@ -317,7 +322,7 @@ div.page-wrapper {
 
 nav {
   background-color: rgb(255, 255, 255);
-  top:10px;
+  top: 10px;
 }
 
 /* content */
@@ -441,7 +446,7 @@ ul.menulist {
     margin: 8px;
   }
 
- 
+
   blockquote {
     font: 46px Nimbussanl bol, sans-serif;
   }
@@ -503,7 +508,7 @@ ul.menulist {
     margin-right: 4px;
     place-self: end;
   }
-  
+
   .my-grid-container>.book-image-2 {
     grid-column: 1 / span 5;
     grid-row: 1 / span 1;
@@ -512,7 +517,7 @@ ul.menulist {
     object-fit: contain;
     place-self: end;
   }
-  
+
   .my-grid-container>.book-image-3 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
@@ -523,7 +528,7 @@ ul.menulist {
     margin-right: -20px;
     place-self: end;
   }
-  
+
   p {
     display: block;
     cursor: default;
