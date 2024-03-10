@@ -259,7 +259,23 @@ p {
   font-weight: normal;
   font: 19px Nimbussanl bol, sans-serif;
   word-break: keep-all;
-  color: gray;
+  color: whitesmoke;
+}
+
+p:hover {
+  color: #000;
+}
+
+blockquote {
+  color: whitesmoke;
+  font-size: 24px;
+  font-family: Nimbussanl bol, sans-serif;
+  text-align: left;
+  /* lockquote element style */
+}
+
+blockquote:hover{
+  color: #000;
 }
 
 ul {
@@ -287,13 +303,6 @@ a:hover {
 
 }
 
-blockquote {
-  color: gray;
-  font-size: 24px;
-  font-family: Nimbussanl bol, sans-serif;
-  text-align: left;
-  /* lockquote element style */
-}
 
 .draggable {
   color: black;
@@ -429,7 +438,7 @@ a.button {
 }
 
 .sidenav a {
-  padding: 2px 1px 10px 40px;
+  padding: 2px 1px 10px;
   text-decoration: none;
   font-family: Nimbussanl bol, sans-serif;
   font-size: 15px;
