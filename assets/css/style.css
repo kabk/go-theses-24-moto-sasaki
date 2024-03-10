@@ -231,11 +231,6 @@ blockquote {
   cursor: move;
 }
 
-.draggable:hover {
-  transform: scale(1.5);
-  cursor: move;
-}
-
 hr {
   color: none;
   /* horizontal rule style */
