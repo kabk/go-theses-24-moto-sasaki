@@ -354,7 +354,8 @@ a.button {
 
 #main {
   transition: margin-right .10s;
-  right: -1px;
+  right: 30px;
+  top: -11px;
   position: relative;
   width: auto;
   text-align: right;
@@ -391,8 +392,8 @@ a.button {
 
 .sidenav .closebtn {
   position: relative;
-  top: -100px;
-  left: 99px;
+  top: -115px;
+  left: 93px;
   cursor: pointer;
   font-size: 47px;
   margin-left: 5px;
@@ -441,7 +442,7 @@ ul.menulist {
   }
 
   .page-wrapper {
-    width: 257vw !important;
+    width: 303vw !important;
   }
 
   .chapter-content-text {
@@ -525,7 +526,7 @@ ul.menulist {
     text-align: left;
     letter-spacing: 0px;
     line-height: 11px;
-    font: 15px Nimbussanl bol, sans-serif;
+    font: 25px Nimbussanl bol, sans-serif;
     color: black;
     word-break: keep-all;
     hyphens: auto;
