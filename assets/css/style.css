@@ -71,6 +71,64 @@ a:hover {
   text-decoration: underline;
 }
 
+.lightbox-window {
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.95);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  &:target {
+    visibility: visible;
+    opacity: 30;
+    pointer-events: auto;
+  }
+  & > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: white;
+  }
+}
+
+.lightbox-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 70%;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 0;
+  width: 80px;
+  text-decoration: none;
+  /* &:hover {
+    color: black;
+  } */
+}
+
+.btn {
+  color: #000;
+  background: white;
+  line-height: 50px;
+  margin: 100px auto 0 auto;
+  width: 220px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: blue;
+  }
+}
+
 header {
   position: absolute;
   top: 35px;
@@ -103,24 +161,6 @@ header {
   /* Example border */
   padding: 5px;
   /* Example padding */
-}
-
-.card {
-  position: relative;
-  display: inline-block;
-  margin: 50px;
-}
-
-.card .img-top {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-.card:hover .img-top {
-  display: inline;
 }
 
 .chapter-content-text {
@@ -171,7 +211,7 @@ h1 {
   position: sticky;
   display: block;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
   background-color: whitesmoke;
   transition: background-color 8s ease;
   text-align: left;
@@ -212,8 +252,10 @@ p {
   text-align: left;
   letter-spacing: -1px;
   line-height: 1.3;
+  font-weight: normal;
   font-family: Nimbussanl bol, sans-serif;
   font-size: 19px;
+  word-break: keep-all;
   color: black;
 }
 
@@ -232,7 +274,6 @@ a:visited,
 a:hover {
   /* color: var(--color-text-link-hover); */
   color: gainsboro;
-  text-align: left;
   text-decoration: none;
 
 }
@@ -401,8 +442,8 @@ a.button {
 
 .sidenav .closebtn {
   position: relative;
-  top: -12px;
-  left: 93px;
+  top: -7px;
+  left: -9px;
   cursor: pointer;
   font-size: 47px;
   margin-left: 5px;
@@ -531,11 +572,11 @@ ul.menulist {
 
   p {
     display: block;
-    cursor: default;
     width: 100%;
     text-align: left;
     letter-spacing: 0px;
     line-height: 11px;
+    font-weight: normal;
     font-size: 45px;
     font-family: Nimbussanl bol, sans-serif;
     color: black;

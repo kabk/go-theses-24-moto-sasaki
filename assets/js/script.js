@@ -18,11 +18,14 @@ $( function() {
   $( ".draggable" ).draggable();
 });
 
-window.addEventListener('scroll', function() {
-  var element = document.getElementById('h1 ');
-  if (window.scrollY > 40) { // Change 100 to the scroll position at which you want the color to change
-    element.style.backgroundColor = 'whitesmoke'; // Change to the desired color
-  } else {
-    element.style.backgroundColor = 'yellow'; // Change back to the original color
-  }
-});
+document.addEventListener('DOMContentLoaded', function() {
+  var closeButtons = document.querySelectorAll('.lightbox-close');
+  closeButtons.forEach(function(button) {
+    button.addEventListener('close', function(event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor tag
+      var targetId = this.getAttribute('href'); // Get the target ID from the href attribute
+      var targetElement = document.querySelector(targetId); // Find the target element
+      targetElement.style.visibility = 'hidden'; // Hide the target element
+    });
+  });
+})
