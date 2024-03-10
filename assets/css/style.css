@@ -58,6 +58,7 @@ body {
   color: var(--color-text);
   width: 100%;
   height: auto;
+  background-color: white;
   overflow-y: auto;
 }
 
@@ -69,6 +70,10 @@ a {
 a:hover {
   color: var(--color-text-link-hover);
   text-decoration: underline;
+}
+
+.footnotes {
+  font-size: 12px;
 }
 
 .lightbox-window {
@@ -252,10 +257,9 @@ p {
   text-align: left;
   line-height: 1.7;
   font-weight: normal;
-  font-family: Nimbussanl bol, sans-serif;
-  font-size: 19px;
+  font: 19px Nimbussanl bol, sans-serif;
   word-break: keep-all;
-  color: black;
+  color: gray;
 }
 
 ul {
@@ -284,7 +288,7 @@ a:hover {
 }
 
 blockquote {
-  color: none;
+  color: gray;
   font-size: 24px;
   font-family: Nimbussanl bol, sans-serif;
   text-align: left;
@@ -292,7 +296,7 @@ blockquote {
 }
 
 .draggable {
-  color: darkblue;
+  color: black;
   cursor: move;
 }
 
@@ -604,7 +608,7 @@ ul.menulist {
   }
 
   .sidenav {
-    padding-top: 15px;
+    padding-top: 112px;
   }
 
   .sidenav a {
