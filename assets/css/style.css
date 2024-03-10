@@ -314,6 +314,7 @@ div.page-wrapper {
 
 nav {
   background-color: rgb(255, 255, 255);
+  top:10px;
 }
 
 /* content */
@@ -341,7 +342,7 @@ a.button {
   position: fixed;
   font-size: 70px;
   bottom: -30px;
-  right: -1px;
+  right: 20px;
   padding: 0.4em;
   margin: 0;
   border: none;
@@ -355,7 +356,7 @@ a.button {
 #main {
   transition: margin-right .10s;
   right: 30px;
-  top: -11px;
+  top: 1px;
   position: relative;
   width: auto;
   text-align: right;
@@ -392,7 +393,7 @@ a.button {
 
 .sidenav .closebtn {
   position: relative;
-  top: -115px;
+  top: -12px;
   left: 93px;
   cursor: pointer;
   font-size: 47px;
@@ -401,6 +402,7 @@ a.button {
 
 ul.menulist {
   position: relative;
+  top: -103px;
 }
 
 
