@@ -16,9 +16,5 @@ function closeNav() {
 
 $( function() {
   $( ".draggable" ).draggable();
-  $( ".draggable1" ).draggable1();
-});
 
-$(function() {
-  $(".draggable-image").draggable();
 });
