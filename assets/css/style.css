@@ -241,16 +241,6 @@ blockquote {
   cursor: move;
 }
 
-.draggable1 {
-  color: grey;
-  white-space: nowrap;
-  cursor: move;
-}
-
-.draggable-image {
-  cursor: move;
-}
-
 hr {
   color: none;
   /* horizontal rule style */
