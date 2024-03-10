@@ -427,7 +427,7 @@ ul.menulist {
 
   /* your 'mobile' overriding css properties here */
   .title {
-    font-size: 10px;
+    font-size: 40px;
     font-family: Nimbussanl bol, sans-serif;
     color: gainsboro;
     text-align: center;
@@ -444,7 +444,7 @@ ul.menulist {
   }
 
   .chapter-content-text {
-    min-width: 100% !important;
+    min-width: 80% !important;
     background-color: none;
   }
 
