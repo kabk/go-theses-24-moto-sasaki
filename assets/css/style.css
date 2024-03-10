@@ -479,7 +479,7 @@ ul.menulist {
 
   /* your 'mobile' overriding css properties here */
   .title {
-    font-size: 50px;
+    font-size: 22px;
     font-family: Nimbussanl bol, sans-serif;
     color: gainsboro;
     text-align: left;
@@ -488,11 +488,11 @@ ul.menulist {
 
 
   blockquote {
-    font: 46px Nimbussanl bol, sans-serif;
+    font: 20px Nimbussanl bol, sans-serif;
   }
 
   .page-wrapper {
-    width: 303vw !important;
+    width: 99vw !important;
   }
 
   .chapter-content-text {
@@ -575,7 +575,7 @@ ul.menulist {
     text-align: left;
     line-height: 1.3;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 19px;
     font-family: Nimbussanl bol, sans-serif;
     color: black;
     word-break: break-word;
