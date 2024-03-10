@@ -608,7 +608,7 @@ ul.menulist {
   }
 
   .sidenav {
-    padding-top: 112px;
+    padding-top: -5px;
   }
 
   .sidenav a {

@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "220px";
+  document.getElementById("mySidenav").style.width = "570px";
   document.getElementById("main").style.marginRight = "10px";
 }
 
