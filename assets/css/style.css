@@ -358,6 +358,22 @@ figcaption {
   font-size: 15px;
 }
 
+figcaptionone {
+  display: block;
+  cursor: default;
+  text-align: center;
+  font-family: Nimbussanl bol, sans-serif;
+  font-size: 15px;
+}
+
+figcaptiontwo {
+  display: block;
+  cursor: default;
+  text-align: center;
+  font-family: Nimbussanl bol, sans-serif;
+  font-size: 15px;
+}
+
 /* PAGE STYLES */
 
 /* page structure */
@@ -623,6 +639,15 @@ ul.menulist {
     color: black;
     word-break: break-word;
     hyphens: auto;
+  }
+
+  figcaptionone {
+    display: none;
+   
+  }
+  
+  figcaptiontwo {
+    display: none;
   }
 
   /* p:hover {
