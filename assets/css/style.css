@@ -242,40 +242,42 @@ p {
   width: 100%;
   text-align: left;
   line-height: 1.7;
-  letter-spacing: -1.1px;
+  letter-spacing: normal;
   font-weight: normal;
   font: 20px bold Nimbussanl bol, sans-serif;
   word-break: keep-all;
-  color: whitesmoke;
+  color: black;
+  /* color: whitesmoke; */
   /* transition: color 2s linear; */
 }
 
-p:hover {
+/* p:hover {
   color: black;
-}
+} */
 
 .footnotes {
-  font: 12px Helvetica;
+  font: 19px Helvetica;
   letter-spacing: 0px;
   word-break: keep-all;
   font-weight: normal;
 }
 
 blockquote {
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  color: black;
   font-size: 24px;
   font-family: Nimbussanl bol, sans-serif;
   text-align: left;
   /* lockquote element style */
 }
 
-blockquote:hover{
+/* blockquote:hover{
   color: #000;
-}
+} */
 
 ul {
   position: fixed;
-  line-height: 30px;
+  line-height: 37px;
   display: block;
   right: 40px;
   list-style: none;
@@ -287,15 +289,14 @@ a,
 a:visited,
 a:hover {
   /* color: var(--color-text-link-hover); */
-  color: gainsboro;
+  color: darkblue;
   text-decoration: none;
+  cursor: pointer;
 
 }
 
 a:hover {
-  color: grey;
   text-decoration: underline black 1.5px;
-
 }
 
 
@@ -404,7 +405,7 @@ a.button {
   border: none;
   text-decoration: none;
   cursor: pointer;
-  color: grey;
+  color: gray;
   background-color: transparent;
   scroll-behavior: smooth;
 }
@@ -439,12 +440,11 @@ a.button {
   font-size: 18px;
   right: 20px;
   color: #818181;
-  display: block;
   transition: 0.4s;
 }
 
 .sidenav a:hover {
-  text-decoration: underline;
+  text-decoration: 1px underline;
 }
 
 .sidenav .closebtn {
@@ -461,7 +461,17 @@ ul.menulist {
   top: -103px;
 }
 
-
+.Bibliography {
+  display: block;
+  width: 100%;
+  text-align: left;
+  line-height: -1.3;
+  letter-spacing: normal;
+  font-size: 19px;
+  font-family: Nimbussanl bol, sans-serif;
+  word-break: break-word;
+  hyphens: auto;
+}
 
 /* UTILITY CLASSES */
 
@@ -475,8 +485,6 @@ ul.menulist {
   display: none;
 }
 
-
-
 /* WEBSITE MEDIA QUERIES */
 
 /* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
@@ -487,25 +495,36 @@ ul.menulist {
 
   /* your 'mobile' overriding css properties here */
   .title {
-    font-size: 20px;
+    font-size: 23px;
     font-family: Antique, sans-serif;
     color: gainsboro;
     text-align: left;
     margin: 8px;
   }
 
+  .content{
+    display: none;
+  }
+
+  .chapter-content-image{
+    display: none;
+  }
+
+  a.button{
+    display: none;
+  }
 
   blockquote {
-    color: whitesmoke;
-    font: 20px Nimbussanl bol, sans-serif;
+    color: black;
+    font: 19px Nimbussanl bol, sans-serif;
   }
 
-  blockquote:hover{
+  /* blockquote:hover{
     color: #000;
-  }
+  } */
 
   .page-wrapper {
-    width: 99vw !important;
+    width: 86vw !important;
   }
 
   h1{
@@ -532,7 +551,7 @@ ul.menulist {
   }
 
   .footnotes {
-    font: 11px Helvetica;
+    font: 19px Helvetica;
     letter-spacing: 0px;
     word-break: keep-all;
     font-weight: normal;
@@ -597,25 +616,22 @@ ul.menulist {
     display: block;
     width: 100%;
     text-align: left;
-    line-height: 1.3;
-    font-weight: normal;
+    line-height: -1.3;
+    letter-spacing: normal;
     font-size: 19px;
     font-family: Nimbussanl bol, sans-serif;
-    color: whitesmoke;
+    color: black;
     word-break: break-word;
     hyphens: auto;
-    /* paragraph style */
   }
 
-  p:hover {
+  /* p:hover {
     color: #000;
-  }
+  } */
 
   .chapter-content-image {
     width: 10%;
   }
-
-
 
   /* utility classes, mobile */
 
@@ -637,31 +653,21 @@ ul.menulist {
 
 }
 
-
-
 /* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
 
 @media (max-width: 339px) {
 
-
-
   /* your overriding css properties here */
 
 }
-
-
 
 /* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
 
 @media (max-width: 779px) and (orientation: landscape) {
 
-
-
   /* your overriding css properties here */
 
 }
-
-
 
 /* use this query to apply style for 'small' desktop screens */
 
