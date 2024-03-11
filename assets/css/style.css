@@ -415,7 +415,7 @@ a.button {
   position: fixed;
   font-size: 70px;
   bottom: -30px;
-  right: 20px;
+  right: 19px;
   padding: 0.4em;
   margin: 0;
   border: none;
@@ -429,7 +429,7 @@ a.button {
 #main {
   transition: margin-right .10s;
   right: 21px;
-  top: 1px;
+  top: -20px;
   position: relative;
   width: auto;
   text-align: right;
@@ -586,7 +586,7 @@ ul.menulist {
     position: fixed;
     font-size: 70px;
     bottom: -30px;
-    right: 0px;
+    right: 1px;
     padding: 0.4em;
     margin: 0;
     border: none;
