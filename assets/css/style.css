@@ -246,6 +246,7 @@ p {
   font-weight: normal;
   font: 20px bold Nimbussanl bol, sans-serif;
   word-break: keep-all;
+  hyphens: auto;
   color: black;
   /* color: whitesmoke; */
   /* transition: color 2s linear; */
@@ -632,7 +633,7 @@ ul.menulist {
     display: block;
     width: 100%;
     text-align: left;
-    line-height: -1.3;
+    line-height: 1.2em;
     letter-spacing: normal;
     font-size: 19px;
     font-family: Nimbussanl bol, sans-serif;
